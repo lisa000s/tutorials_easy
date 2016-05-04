@@ -1,0 +1,32 @@
+// make sure you have jdk installed. To check the verion use the command:
+
+java -version
+
+// 1. To set path to JAVA_HOME open applications/utilities/terminal
+// 2. enter the command:
+
+touch ~/.bash_profile; open ~/.bash_profile
+
+//text editor file named ".bash_profile" file will open
+// 3. add to the end of the file the following line:
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home
+
+// make sure to specify the jdk version that's setup on your machine. I am using jdk1.8.0_77 version
+// 4. Save the file using Command + S, then close the file using Command + Q
+//execute the file using the following command:
+
+source ~/.bash_profile
+
+// to test your work use the following command:
+
+echo "export JAVA_HOME=`/usr/libexec/java_home`"
+
+// you should see this printed: export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home
+// Congrats! 
+
+// to print the list of all environment variables on your machine use the following commnad and make sure JAVA_HOME is listed:
+
+printenv
+
+
